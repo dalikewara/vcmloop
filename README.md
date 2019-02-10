@@ -12,7 +12,7 @@
 # An interval-based looping method for massive data
 Doing simple looping basicly doesn't have big impact to your RAM/CPU resource, but, it will if you performing heavy looping with massive data, for example 100k data or > 1m data.
 
-Default looping method like `for`, `while`, `foreach` runs faster (better performance), but also takes and spends more RAM/CPU resource. The number spent of your RAM/CPU resource will grow up along with the looping process&mdash;if you own more resource, I think it's not a big problem. Otherwise, using interval method doesn't spend RAM/CPU resource too much. It just takes a little bit of it and keeping the resource stable until the process finish. As a consequence, it runs slower than the default method.
+Default looping method like `for`, `while`, `foreach` runs faster (has better performance), but also takes and spent more RAM/CPU resource continously along with the looping process&mdash;if you own more resource, I think it's not a big problem. Otherwise, using interval method doesn't harm RAM/CPU resource too much. It just uses a little bit of it and keeping the resource stable until the process is done. As a consequence, it runs slower than the default method&mdash;but still fast.
 
 So, if you need to do looping with massive data and heavy process inside, using interval method should be a better solution.
 
@@ -66,7 +66,7 @@ vcmloop(0, 5, (num) => {
 });
 ```
 
-You can pass an `end` argument to run once after the **synchronous** looping process finish.
+You can pass an `end` argument to run once after the **synchronous** looping process is done.
 
 ```js
 vcmloop(0, 5, (num) => {
