@@ -47,7 +47,7 @@ Browser
 # Quickstart
 
 ```js
-vcmloop.left(start, stop, fn, end[optional], delay[optional]);
+vcmloop(start, stop, fn, end[optional], delay[optional]);
 ```
 
 - Arguments
@@ -66,7 +66,7 @@ vcmloop(0, 5, (num) => {
 });
 ```
 
-You can pass an `end` argument to run it once after the looping process end.
+You can pass an `end` argument to run it once after the **synchronous** looping process end.
 
 ```js
 vcmloop(0, 5, (num) => {
@@ -96,8 +96,24 @@ vcmloop(0, 5, (num) => {
 vcmloop(0, 5, (num) => {
   console.log(num);
 }, () => {
-  console.log('end);
+  console.log('end');
 }, 200);
+```
+
+You may do this in **asynchronous** looping process to make sure your codes runs correctly:
+
+```js
+var len = 10;
+var lenX = len - 1;
+var start = 0;
+
+vcmloop(start, len, (num) => {
+  console.log(num);
+  
+  sampleFunction(sampleCallback => {
+    if (num === lenX) return 'end';
+  });
+});
 ```
 
 # Release
