@@ -1,0 +1,38 @@
+{
+  "name": "vcmloop",
+  "version": "1.0.0",
+  "description": "An interval-based looping method",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalikewara/vcmloop.git"
+  },
+  "homepage": "https://github.com/dalikewara/vcmloop",
+  "bugs": {
+    "url": "https://github.com/dalikewara/vcmloop/issues",
+    "email": "dalikewara@gmail.com"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "tool",
+    "toolkit",
+    "vascomm",
+    "looping",
+    "method",
+    "interval",
+    "helper",
+    "loop"
+  ],
+  "author": "Dali Kewara",
+  "contributors": [
+    {
+      "name": "Dali Kewara",
+      "email": "dalikewara@gmail.com",
+      "url": "https://www.dalikewara.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {}
+}
