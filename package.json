@@ -1,6 +1,6 @@
 {
   "name": "vcmloop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An interval-based looping method",
   "main": "app.js",
   "repository": {
